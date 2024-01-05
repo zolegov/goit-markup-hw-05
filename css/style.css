@@ -525,11 +525,11 @@ ul {
 }
 .close:hover,
 .close:focus {
-   fill: #fff;
+  fill: #fff;
   background-color: #404bbf;
   border: none;
 }
-.form-close { 
+.form-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-title {
@@ -627,7 +627,7 @@ textarea:active {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-input:focus .form-icon{
+.modal-form-input:focus + .form-icon {
   fill: #4d5ae5;
 }
 .form-text {
@@ -662,14 +662,13 @@ textarea:active {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
-.checkbox-privacy:checked .checkbox-span {
+.checkbox-privacy:checked + .checkbox-span {
   background-color: #404bbf;
   border: none;
-  fill:#F4F4FD;
+  fill: #f4f4fd;
 }
